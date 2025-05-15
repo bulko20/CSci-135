@@ -79,7 +79,7 @@ dw_tmin = dw(dp_tmin.resid.dropna())
 print('\n\nDurbin-Watson Test for RF:', dw_rf,
       '\n\nDurbin-Watson Test for TMEAN:', dw_tmean,
       '\n\nDurbin-Watson Test for TMAX:', dw_tmax,
-      '\n\nDurbin-Watson Test for TMIN:', dw_tmin)
+      '\n\nDurbin-Watson Test for TMIN:', dw_tmin)  ## NOTE: Values printed will be between 0-4... 2 = no autocorr, < 2 = negative autocorr, > 2 = positive autocorr
 
 # Plot the autocorrelation (lags=36 to provide a bigger picture of the data)
 acf(totals_prcp_monthly, lags=36)
